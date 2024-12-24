@@ -1,0 +1,116 @@
+/* Общие стили для контейнера регистрации */
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.visual {
+  background-color: rgb(5, 18, 134);
+  width: 100%; /* Занимает всю ширину */
+  height: 100vh; /* Занимает всю высоту экрана */
+  display: flex;
+  flex-direction: column; /* Для вертикального размещения */
+  align-items: center;
+  justify-content: center; /* Центрирует контент вертикально */
+  box-sizing: border-box; /* Учитываем отступы */
+}
+
+.text {
+  font-size: 60px; /* Размер шрифта */
+  color: #fff;
+  text-align: center; /* Центрируем текст */
+  margin-bottom: 20px; /* Отступ между текстом и кнопками */
+}
+
+.button {
+  padding: 12px 30px;
+  background-color: #0077ff;
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #104bee;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.registration-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.registration-form:hover {
+  transform: translateY(-5px); /* Плавное поднятие формы */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+}
+
+input:focus {
+  border-color: #0077ff;
+  outline: none;
+  background-color: #e8f4ff;
+}
+
+button.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #0077ff;
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.submit-button:hover {
+  background-color: #104bee;
+  transform: translateY(-2px); /* Легкое поднятие кнопки */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 20px;
+}
