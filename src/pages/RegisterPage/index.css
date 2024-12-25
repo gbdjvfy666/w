@@ -55,7 +55,7 @@
 }
 
 .registration-form:hover {
-  transform: translateY(-5px); /* Плавное поднятие формы */
+  transform: translateY(3px); /* Плавное поднятие формы */
 }
 
 .form-group {

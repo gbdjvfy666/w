@@ -1,24 +1,37 @@
 .header {
   background-color: rgb(5, 18, 134);
-  width: 100%; /* Занимает всю ширину */
-  height: 100vh; /* Занимает всю высоту экрана */
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column; /* Для вертикального размещения */
+  flex-direction: column;
   align-items: center;
-  justify-content: center; /* Центрирует контент вертикально */
-  box-sizing: border-box; /* Учитываем отступы */
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.5s ease; /* Плавный переход */
+}
+
+.header-auth {
+  justify-content: flex-start; /* Перемещает контент вверх */
+  padding-top: 50px; /* Отступ сверху */
 }
 
 .text {
-  font-size: 60px; /* Размер шрифта */
+  font-size: 60px;
   color: #fff;
-  text-align: center; /* Центрируем текст */
-  margin-bottom: 20px; /* Отступ между текстом и кнопками */
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease, font-size 0.5s ease; /* Анимация */
+}
+
+.text-auth {
+  transform: translateY(-50px); /* Поднимает текст */
+  font-size: 40px; /* Уменьшает размер текста */
 }
 
 .buttons {
-  display: flex; /* Кнопки выровнены в строку */
-  gap: 10px; /* Расстояние между кнопками */
+  display: flex;
+  gap: 10px;
 }
 
 .button {
@@ -31,6 +44,27 @@
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+}
+
+.button-profile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 12px 30px;
+  background-color: #0077ff;
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button-profile:hover {
+  background-color: #104bee;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .button:hover {
